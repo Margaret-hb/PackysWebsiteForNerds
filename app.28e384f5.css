@@ -410,12 +410,13 @@ h5 {
         justify-content: flex-start;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items:  
-   }
+        align-items:
+    }
     .card-info-modal .modal-body>:not(:last-child) {
         margin-bottom: 20px 
    }
 }
+
 body {
     font-family: Roboto, sans-serif;
     color: #bb3636;

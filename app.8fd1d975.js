@@ -541,11 +541,8 @@
                 path: "builder"
               }
             }
-          }, [t._v("Home")])], 1), n("a", {
-            attrs: {
-              href: "https://github.com/CptSpaceToaster/pkmntcg-decklist"
-            }
-          }, [n("svgicon", {
+          }, [t._v("")])], 1), n("a", 
+          [n("", {
             attrs: {
               id: "github",
               name: "github",
@@ -4849,7 +4846,7 @@
       var ya = new Gn["a"]({
         routes: [{
           path: "/",
-          name: "home",
+          name: "",
           redirect: {
             name: "builder"
           }
@@ -4858,20 +4855,20 @@
           path: "/builder",
           component: Ic,
           meta: {
-            navigationTitle: "Pokemon TCG Decklist Creator"
+            navigationTitle: "Listings"
           }
         }, {
           name: "inspector",
           path: "/inspector",
           component: Ii,
           meta: {
-            navigationTitle: "Pokemon TCG Decklist Inspector"
+            navigationTitle: "Listings"
           }
         }, {
           path: "*",
           name: "lost",
           redirect: {
-            name: "home"
+            name: ""
           }
         }]
       });
