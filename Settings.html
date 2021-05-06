@@ -40,7 +40,7 @@
       <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logos/ERG Navbar Logo.png" alt="">
+            <img src="/images/logos/ERG Navbar Logo.png" alt="">
           </a>
       
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,169 +82,264 @@
         </div>
       </nav>
       <!-- BACKGROUND IMAGE =============================-->
-       <img src="images/logos/Header-Logo-04.png" alt="ERG Merch Shop" class="responsive">
+       <img src="/images/logos/Header-Logo-04.png" alt="ERG Merch Shop" class="responsive">
 </header>
 
 <main>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
+  <div class="container light-style flex-grow-1 container-p-y">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="Equal-Store-Images" src="images/products/Equal_products/womens polo.png" alt=""></img>
+    <h4 class="font-weight-bold py-3 mb-4">
+      Account settings
+    </h4>
 
-            <div class="card-body">
-               <p class="card-title">Women's Polo</p>
-               <p class="card-title">$00.00 Min Qty.25</p>
-               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-               <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
-                  <a class="add-cart cart1">
-                    
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button></a>
+    <div class="card overflow-hidden">
+      <div class="row no-gutters row-bordered row-border-light">
+        <div class="col-md-3 pt-0">
+          <div class="list-group list-group-flush account-settings-links">
+            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">General</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Change password</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-info">Info</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-social-links">Social links</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-connections">Connections</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications">Notifications</a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="tab-content">
+            <div class="tab-pane fade active show" id="account-general">
+
+              <div class="card-body media align-items-center">
+                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-80">
+                <div class="media-body ml-4">
+                  <label class="btn btn-outline-primary">
+                    Upload new photo
+                    <input type="file" class="account-settings-fileinput">
+                  </label> &nbsp;
+                  <button type="button" class="btn btn-default md-btn-flat">Reset</button>
+
+                  <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max size of 800K</div>
+                </div>
+              </div>
+              <hr class="border-light m-0">
+
+              <div class="card-body">
+                <div class="form-group">
+                  <label class="form-label">Username</label>
+                  <input type="text" class="form-control mb-1" value="nmaxwell">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" value="Nelle Maxwell">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">E-mail</label>
+                  <input type="text" class="form-control mb-1" value="nmaxwell@mail.com">
+                  <div class="alert alert-warning mt-3">
+                    Your email is not confirmed. Please check your inbox.<br>
+                    <a href="javascript:void(0)">Resend confirmation</a>
                   </div>
-                  <small class="text-muted">Minimum Qty: 20</small>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Company</label>
+                  <input type="text" class="form-control" value="Company Ltd.">
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="account-change-password">
+              <div class="card-body pb-2">
+
+                <div class="form-group">
+                  <label class="form-label">Current password</label>
+                  <input type="password" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">New password</label>
+                  <input type="password" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Repeat new password</label>
+                  <input type="password" class="form-control">
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="account-info">
+              <div class="card-body pb-2">
+
+                <div class="form-group">
+                  <label class="form-label">Bio</label>
+                  <textarea class="form-control" rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nunc arcu, dignissim sit amet sollicitudin iaculis, vehicula id urna. Sed luctus urna nunc. Donec fermentum, magna sit amet rutrum pretium, turpis dolor molestie diam, ut lacinia diam risus eleifend sapien. Curabitur ac nibh nulla. Maecenas nec augue placerat, viverra tellus non, pulvinar risus.</textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Birthday</label>
+                  <input type="text" class="form-control" value="May 3, 1995">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Country</label>
+                  <select class="custom-select">
+                    <option>USA</option>
+                    <option selected="">Canada</option>
+                    <option>UK</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                  </select>
+                </div>
+
+
+              </div>
+              <hr class="border-light m-0">
+              <div class="card-body pb-2">
+
+                <h6 class="mb-4">Contacts</h6>
+                <div class="form-group">
+                  <label class="form-label">Phone</label>
+                  <input type="text" class="form-control" value="+0 (123) 456 7891">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Website</label>
+                  <input type="text" class="form-control" value="">
+                </div>
+
+              </div>
+      
+            </div>
+            <div class="tab-pane fade" id="account-social-links">
+              <div class="card-body pb-2">
+
+                <div class="form-group">
+                  <label class="form-label">Twitter</label>
+                  <input type="text" class="form-control" value="https://twitter.com/user">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Facebook</label>
+                  <input type="text" class="form-control" value="https://www.facebook.com/user">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Google+</label>
+                  <input type="text" class="form-control" value="">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">LinkedIn</label>
+                  <input type="text" class="form-control" value="">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Instagram</label>
+                  <input type="text" class="form-control" value="https://www.instagram.com/user">
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="account-connections">
+              <div class="card-body">
+                <button type="button" class="btn btn-twitter">Connect to <strong>Twitter</strong></button>
+              </div>
+              <hr class="border-light m-0">
+              <div class="card-body">
+                <h5 class="mb-2">
+                  <a href="javascript:void(0)" class="float-right text-muted text-tiny"><i class="ion ion-md-close"></i> Remove</a>
+                  <i class="ion ion-logo-google text-google"></i>
+                  You are connected to Google:
+                </h5>
+                nmaxwell@mail.com
+              </div>
+              <hr class="border-light m-0">
+              <div class="card-body">
+                <button type="button" class="btn btn-facebook">Connect to <strong>Facebook</strong></button>
+              </div>
+              <hr class="border-light m-0">
+              <div class="card-body">
+                <button type="button" class="btn btn-instagram">Connect to <strong>Instagram</strong></button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="account-notifications">
+              <div class="card-body pb-2">
+
+                <h6 class="mb-4">Activity</h6>
+
+                <div class="form-group">
+                  <label class="switcher">
+                    <input type="checkbox" class="switcher-input" checked="">
+                    <span class="switcher-indicator">
+                      <span class="switcher-yes"></span>
+                      <span class="switcher-no"></span>
+                    </span>
+                    <span class="switcher-label">Email me when someone comments on my article</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="switcher">
+                    <input type="checkbox" class="switcher-input" checked="">
+                    <span class="switcher-indicator">
+                      <span class="switcher-yes"></span>
+                      <span class="switcher-no"></span>
+                    </span>
+                    <span class="switcher-label">Email me when someone answers on my forum thread</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="switcher">
+                    <input type="checkbox" class="switcher-input">
+                    <span class="switcher-indicator">
+                      <span class="switcher-yes"></span>
+                      <span class="switcher-no"></span>
+                    </span>
+                    <span class="switcher-label">Email me when someone follows me</span>
+                  </label>
+                </div>
+              </div>
+              <hr class="border-light m-0">
+              <div class="card-body pb-2">
+
+                <h6 class="mb-4">Application</h6>
+
+                <div class="form-group">
+                  <label class="switcher">
+                    <input type="checkbox" class="switcher-input" checked="">
+                    <span class="switcher-indicator">
+                      <span class="switcher-yes"></span>
+                      <span class="switcher-no"></span>
+                    </span>
+                    <span class="switcher-label">News and announcements</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="switcher">
+                    <input type="checkbox" class="switcher-input">
+                    <span class="switcher-indicator">
+                      <span class="switcher-yes"></span>
+                      <span class="switcher-no"></span>
+                    </span>
+                    <span class="switcher-label">Weekly product updates</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="switcher">
+                    <input type="checkbox" class="switcher-input" checked="">
+                    <span class="switcher-indicator">
+                      <span class="switcher-yes"></span>
+                      <span class="switcher-no"></span>
+                    </span>
+                    <span class="switcher-label">Weekly blog digest</span>
+                  </label>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="Equal-Store-Images" src="images/products/Equal_products/mens polo.png" alt=""></img>
+      </div>
+    </div>
 
-            <div class="card-body">
-              <p class="card-title">Men's Polo</p>
-               <p class="card-title">$00.00 Min Qty.25</p>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
-                  <a class="add-cart cart2">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button></a>
-                </div>
-                <small class="text-muted">Minimum Qty: 250</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="Equal-Store-Images" src="images/products/Equal_products/womens tshirt.png" alt=""></img>
+    <div class="text-right mt-3">
+      <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
+      <button type="button" class="btn btn-default">Cancel</button>
+    </div>
 
-            <div class="card-body">
-              <p class="card-title">Women's T-shirt</p>
-              <p class="card-title">$00.00 ea. Min Qty 25</p>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
-                  <a class="add-cart cart3">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button></a>
-                </div>
-                <small class="text-muted">Minimum Qty: 50</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="Equal-Store-Images" src="images/products/Equal_products/mens tshirt.png" alt=""></img>
-
-            <div class="card-body">
-              <p class="card-title">Men's T-shirt</p>
-              <p class="card-title">$00.00 ea. Min Qty 25</p>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
-                  <a class="add-cart cart4">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button></a>
-                </div>
-                <small class="text-muted">Minimum Qty: 24</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="Equal-Store-Images" src="images/products/Equal_products/cap.png" alt=""></img>
-
-            <div class="card-body">
-              <p class="card-title">Cap</p>
-              <p class="card-title">$00.00 ea. Min Qty 25</p>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
-                  <a class="add-cart cart5">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button></a>
-                </div>
-                <small class="text-muted">Minimum Qty: 72</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="Equal-Store-Images" src="images/products/Equal_products/tumbler.png" alt=""></img>
-
-            <div class="card-body">
-              <p class="card-title">tumbler</p>
-              <p class="card-title">$00.00 ea. Min Qty 25</p>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
-                  <a class="add-cart cart6">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button></a>
-                </div>
-                <small class="text-muted">Minimum Qty: 100</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="Equal-Store-Images" src="images/products/Equal_products/pen.png" alt=""></img>
-
-            <div class="card-body">
-              <p class="card-title">Stylus Pen</p>
-              <p class="card-title">$00.00 ea. Min Qty 25</p>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
-                  <a class="add-cart cart7">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button></a>
-                </div>
-                <small class="text-muted">Minimum Qty: 250</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="Equal-Store-Images" src="images/products/Equal_products/journal.png" alt=""></img>
-
-            <div class="card-body">
-              <p class="card-title">Journal</p>
-              <p class="card-title">$00.00 ea. Min Qty 25</p>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
-                  <a class="add-cart cart8">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button></a>
-                </div>
-                <small class="text-muted">Minimum Qty: 250</small>
-              </div>
-            </div>
-          </div>
+  </div>
 
 
   </main>
